@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/homestays",
+      "handler": "homestay.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/homestays/count",
+      "handler": "homestay.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/homestays/:id",
+      "handler": "homestay.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/homestays",
+      "handler": "homestay.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/homestays/:id",
+      "handler": "homestay.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/homestays/:id",
+      "handler": "homestay.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

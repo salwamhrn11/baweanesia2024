@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wisatacards",
+  "info": {
+    "name": "wisatacards",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

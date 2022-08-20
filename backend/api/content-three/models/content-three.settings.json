@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_threes",
+  "info": {
+    "name": "Content-Three"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Description": {
+      "type": "string"
+    }
+  }
+}

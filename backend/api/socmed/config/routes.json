@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/socmeds",
+      "handler": "socmed.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/socmeds/count",
+      "handler": "socmed.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/socmeds/:id",
+      "handler": "socmed.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/socmeds",
+      "handler": "socmed.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/socmeds/:id",
+      "handler": "socmed.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/socmeds/:id",
+      "handler": "socmed.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

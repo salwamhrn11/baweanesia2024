@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_ones",
+  "info": {
+    "name": "Content-one"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "subhedading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

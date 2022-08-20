@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "travelways",
+  "info": {
+    "name": "travelways"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards_desc": {
+      "type": "text"
+    },
+    "cards_img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

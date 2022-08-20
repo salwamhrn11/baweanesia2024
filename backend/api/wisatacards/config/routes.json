@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wisatacards",
+      "handler": "wisatacards.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wisatacards/count",
+      "handler": "wisatacards.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wisatacards/:id",
+      "handler": "wisatacards.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wisatacards",
+      "handler": "wisatacards.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wisatacards/:id",
+      "handler": "wisatacards.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wisatacards/:id",
+      "handler": "wisatacards.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

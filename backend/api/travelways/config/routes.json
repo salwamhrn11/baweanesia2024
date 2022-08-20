@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/travelways",
+      "handler": "travelways.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/travelways/count",
+      "handler": "travelways.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/travelways/:id",
+      "handler": "travelways.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/travelways",
+      "handler": "travelways.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/travelways/:id",
+      "handler": "travelways.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/travelways/:id",
+      "handler": "travelways.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

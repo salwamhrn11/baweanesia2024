@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/conten-twos",
+      "handler": "conten-two.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/conten-twos/count",
+      "handler": "conten-two.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/conten-twos/:id",
+      "handler": "conten-two.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/conten-twos",
+      "handler": "conten-two.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/conten-twos/:id",
+      "handler": "conten-two.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/conten-twos/:id",
+      "handler": "conten-two.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

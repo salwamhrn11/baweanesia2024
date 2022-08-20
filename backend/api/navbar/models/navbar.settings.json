@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbars",
+  "info": {
+    "name": "Navbar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menu_name": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "button_name": {
+      "type": "string"
+    }
+  }
+}
