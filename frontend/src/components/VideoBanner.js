@@ -37,7 +37,7 @@ function VideoBanner() {
               <div className='hero-btns'>
               <Button
                 className='btns'
-                btnColor='ylw-btn'
+                btnColor='yellow-btn'
                 buttonStyle='btn--primary'
                 buttonSize='btn--large'
               >

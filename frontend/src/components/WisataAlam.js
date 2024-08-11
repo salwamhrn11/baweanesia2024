@@ -24,8 +24,8 @@ function WisataAlam() {
             location: "Bawean",
             label: "Air Terjun",
             link: AirTerjunLaccar,
-            description: "Air Terjun Laccar memiliki tinggi 25 meter yang terletak di Desa Kepuh Teluk Dalam, Sangkapura. Dengan ketinggian tersebut dan latar belakan tebing yang artistik, air terjun ini menjadi daya tarik para pengunjung. Pengunjung dapat berenang dan berendam pada air terjun ini.",
-            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.639719881741!2d112.66858587488974!3d-7.783952694400456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7b9df1b3b1b67%3A0x123456789abcdef!2sAir+Terjun+Laccar!5e0!3m2!1sen!2sid!4v1234567890"
+            description: "Air Terjun Laccar memiliki tinggi 25 meter yang terletak di Desa Kepuh Teluk Dalam, Sangkapura. Dengan ketinggian tersebut dan latar belakang tebing yang artistik, air terjun ini menjadi daya tarik para pengunjung. Pengunjung dapat berenang dan berendam pada air terjun ini.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6306.089322131591!2d112.69079793724455!3d-5.806371324562587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf56dd35139eb1%3A0x96930a67c87c4b4e!2sLaccar%20Waterfall!5e0!3m2!1sen!2sid!4v1723357256067!5m2!1sen!2sid"
         },
         {
             id: 3,
@@ -34,7 +34,7 @@ function WisataAlam() {
             label: "Pulau",
             link: PulauNoko,
             description: "Sebuah pantai kecil dengan pasir putih bersih dan gundukan pasir yang memanjang di tengah laut yang begitu jernih. Wisatawan dapat melakukan snorkeling, menaiki banana boat, dan berenang sepuasnya sembari menikmati keindahan Gili Noko.",
-            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.639719881741!2d112.66858587488974!3d-7.783952694400456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7b9df1b3b1b67%3A0x123456789abcdef!2sPulau+Noko!5e0!3m2!1sen!2sid!4v1234567890"
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
         },
     ];
 
