@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+
+.yellow-btn {
+  background: #E5D283;
+  color: #213555;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.yellow-btn:hover {
+  background: #213555;
+  color: #ffffff;
+}
+
 .hero-container video {
   object-fit: cover;
   width: 100% !important;
@@ -33,13 +46,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent; /* Warna overlay, bisa disesuaikan */
+  background-color: transparent;
   z-index: -1;
 }
 
-#ylw-btn {
+/* #ylw-btn {
   background: #F6EACB;
-}
+} */
 
 .hero-container > h1 {
   color: #fff;
@@ -67,24 +80,12 @@
   margin-left: 4px;
 }
 
-.yellow-btn {
-  background: #E5D283;
-  color: #213555;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400px;
-}
-
-.yellow-btn:hover {
-  background: #213555; /* Warna navy lebih gelap saat di-hover */
-  color: #ffffff; /* Warna teks tetap putih */
-}
-
-@media screen and (max-width: 960px) {
+/* @media screen and (max-width: 960px) {
   .hero-container > h1 {
     font-size: 70px;
     margin-top: -150px;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .hero-container > h1 {

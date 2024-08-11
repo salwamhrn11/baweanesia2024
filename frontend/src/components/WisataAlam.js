@@ -74,23 +74,25 @@ function WisataAlam() {
                 {isOpen && selectedCard && (
                     <div className='popup' onClick={() => togglePopup(null)}>
                         <div className='popup-inner' onClick={(e) => e.stopPropagation()}>
-                            <h2>{selectedCard.name}</h2>
                             <img className='popup-image' src={selectedCard.link} alt={selectedCard.name} />
-                            <p>{selectedCard.description}</p>
-                            <div className='gmaps-container'>
-                                <iframe
-                                    src={selectedCard.mapsLink}
-                                    width="100%"
-                                    height="300"
-                                    style={{ border: 0 }}
-                                    allowFullScreen=""
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade"
-                                    title="Google Maps"
-                                ></iframe>
+                            <div className='popup-description'>
+                                <h2>{selectedCard.name}</h2>
+                                <p>{selectedCard.description}</p>
                             </div>
-                            <button onClick={() => togglePopup(null)}>Close</button>
                         </div>
+                        <div className='gmaps-container'>
+                            <iframe
+                                src={selectedCard.mapsLink}
+                                width="100%"
+                                height="300"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Google Maps"
+                            ></iframe>
+                        </div>
+                        <button onClick={() => togglePopup(null)}>Close</button>
                     </div>
                 )}
             </div>

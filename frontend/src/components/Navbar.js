@@ -80,7 +80,7 @@ function Navbar() {
                 Blog
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to='/sign-up'
                 className='nav-links-mobile'
@@ -88,7 +88,7 @@ function Navbar() {
               >
                 Masuk
               </Link>
-            </li>
+            </li> */}
           </ul>
           {/* {button && <Button buttonStyle='btn--primary'><a href='https://intense-peak-53882.herokuapp.com/admin/auth/login' className='btns'>Masuk</a></Button>} */}
         </div>
