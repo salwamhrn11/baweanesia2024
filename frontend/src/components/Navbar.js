@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import LogoNavbar from '../images/Logo Bawean 2022.png'
+import LogoNavbar from '../images/Logo Bawean 2024.png'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -21,19 +21,18 @@ function Navbar() {
   };
 
   const changeBackground = () => {
-    console.log(window.scrollY)
-    if (window.scrollY >= 66) {
-      setNavbar(true)
+    if (window.scrollY >= 66) { 
+      setNavbar(true); // Tambahkan kelas 'nav-scroll' saat discroll
     } else {
-      setNavbar(false)
+      setNavbar(false); // Hilangkan kelas 'nav-scroll' saat tidak discroll
     }
-  }
+  };   
 
   useEffect(() => {
     showButton();
-    changeBackground()
+    changeBackground();
     // adding the event when scroll change background
-    window.addEventListener("scroll", changeBackground)
+    window.addEventListener("scroll", changeBackground);
   }, []);
 
   window.addEventListener('resize', showButton);
@@ -44,8 +43,6 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img className='navbar-logo-img' alt='baweanesia logo' src={LogoNavbar}></img>
-            Baweanesia
-            
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -74,7 +71,6 @@ function Navbar() {
                 Produk
               </Link>
             </li>
-
             <li className='nav-item'>
               <Link
                 to='/blog'
@@ -84,8 +80,7 @@ function Navbar() {
                 Blog
               </Link>
             </li>
-
-            <li>
+            {/* <li>
               <Link
                 to='/sign-up'
                 className='nav-links-mobile'
@@ -93,9 +88,9 @@ function Navbar() {
               >
                 Masuk
               </Link>
-            </li>
+            </li> */}
           </ul>
-          {button && <Button buttonStyle='btn--primary'><a  href='https://intense-peak-53882.herokuapp.com/admin/auth/login' className='btns'>Masuk</a></Button>}
+          {/* {button && <Button buttonStyle='btn--primary'><a href='https://intense-peak-53882.herokuapp.com/admin/auth/login' className='btns'>Masuk</a></Button>} */}
         </div>
       </nav>
     </>

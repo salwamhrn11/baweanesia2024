@@ -1,102 +1,103 @@
-import {axios} from "./axios";
-import React, {useState, useEffect} from "react";
+import React, { useState } from "react";
 import '../App.css';
 import './WisataAlam.css';
-import SearchBar from "./SearchBar";
-import { Link } from "react-router-dom";
 
-function WisataAlam(){
+// Import gambar lokal
+import PantaiTanjungGaang from '../images/pantai-tanjung-gaang.jpg';
+import AirTerjunLaccar from '../images/air-terjun-laccar.jpeg';
+import PulauNoko from '../images/pulau-noko.jpeg';
 
-    // const [isOpen, setIsOpen] = useState(false);
-    // const [popupIndex, setPopupIndex] = useState(0);
-    const [wisatacards, setWisataCards] = useState([]);
-    const [isLoad, setLoad] = useState(false);
+function WisataAlam() {
+    const wisataData = [
+        {
+            id: 1,
+            name: "Pantai Tanjung Gaang",
+            location: "Bawean",
+            label: "Pantai",
+            link: PantaiTanjungGaang,
+            description: "Pantai Tanjung Gaang adalah pantai yang terkenal dengan keindahan batu karangnya. Sebuah objek wisata yang memiliki bukit batu karang yang unik dan indah. Tanjung Gaang menonjol di tengah laut, sehingga kita dapat melihat deretan pulau lain di sekitarnya. Selain itu, pengunjung dapat melihat air laut yang jernih serta menikmati keindahan batu-batu karang dengan menyewa perahu nelayan.",
+            mapsLink: "https://www.google.com/maps?q=Pantai+Tanjung+Gaang,Bawean&output=embed"
+        },
+        {
+            id: 2,
+            name: "Air Terjun Laccar",
+            location: "Bawean",
+            label: "Air Terjun",
+            link: AirTerjunLaccar,
+            description: "Air Terjun Laccar memiliki tinggi 25 meter yang terletak di Desa Kepuh Teluk Dalam, Sangkapura. Dengan ketinggian tersebut dan latar belakang tebing yang artistik, air terjun ini menjadi daya tarik para pengunjung. Pengunjung dapat berenang dan berendam pada air terjun ini.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6306.089322131591!2d112.69079793724455!3d-5.806371324562587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf56dd35139eb1%3A0x96930a67c87c4b4e!2sLaccar%20Waterfall!5e0!3m2!1sen!2sid!4v1723357256067!5m2!1sen!2sid"
+        },
+        {
+            id: 3,
+            name: "Pulau Noko",
+            location: "Bawean",
+            label: "Pulau",
+            link: PulauNoko,
+            description: "Sebuah pantai kecil dengan pasir putih bersih dan gundukan pasir yang memanjang di tengah laut yang begitu jernih. Wisatawan dapat melakukan snorkeling, menaiki banana boat, dan berenang sepuasnya sembari menikmati keindahan Gili Noko.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
+        },
+    ];
 
-    // const togglePopup = (index) => {
-    // setIsOpen(!isOpen);
-    // setPopupIndex(index);
-    // }
+    const [isOpen, setIsOpen] = useState(false);
+    const [selectedCard, setSelectedCard] = useState(null);
 
-    useEffect(() =>{
-        axios
-        .get("/wisatacards")
-        .then(response => {
-            console.log("Response:", response)
-            setWisataCards(response.data)
-            setLoad(true)
-        })
-        .catch((err) => {
-            console.log("Error:", err)
-        })
-    }, []);
-
-    const { search } = window.location;
-    const query = new URLSearchParams(search).get('s');
-    const [searchQuery, setSearchQuery] = useState(query || '');
-    const filterCards = (wisatacards, query) => {
-        if (!query) {
-            return wisatacards;
-        }
-    
-        return wisatacards.filter((post) => {
-            const postName = post.name.toLowerCase();
-            return postName.includes(query);
-        });
+    const togglePopup = (card) => {
+        console.log("Card clicked:", card); // Debugging log
+        setIsOpen(!isOpen);
+        setSelectedCard(card);
     };
-    
-    const filteredCards = filterCards(wisatacards, searchQuery.toLocaleLowerCase());
 
-    return(
+    return (
         <div className='wisata-container'>
-            <h1 data-aos='fade-up'>Wisata Pulau Bawean!</h1>
+            <h1>Wisata Pulau Bawean!</h1>
             <div className='wisata-card-container'>
-                <div className='wisata-card-wrapper'>
-                    <div className='searchbox' data-aos='fade-up'>
-                        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} placeholder="Cari Wisata..."/>
+                {wisataData.map((props) => (
+                    <div
+                        key={props.id}
+                        className='wisata-card-link'
+                        onClick={() => togglePopup(props)}
+                    >
+                        <figure className='wisata-card-pic-wrap' data-category={props.label}>
+                            <img
+                                className='wisata-card-img'
+                                alt={props.label}
+                                src={props.link}
+                            />
+                        </figure>
+                        <div className='wisata-card-info'>
+                            <h5 className='wisata-card-name'>{props.name}</h5>
+                            <h6 className='wisata-card-location'>{props.location}</h6>
+                        </div>
                     </div>
-                    <ul data-aos="fade-up" className='wisata-card'>
-                        {isLoad && filteredCards.map((props, index) =>(
-                            <>
-                            <Link to={`wisata/`+props.id} data-aos='fade-up' className='wisata-cards-item'>
-                                <div className='wisata-card-link'>
-                                    <figure className='wisata-card-pic-wrap' data-category={props.label}>
-                                        <img
-                                        className='wisata-card-img'
-                                        alt={props.label}
-                                        src={props.link.split('|')[1]}
-                                        />
-                                    </figure>
-                                    <div  className='wisata-card-info'>
-                                        <h5 className='wisata-card-name'>{props.name}</h5>
-                                        <h6 className='wisata-card-location'>{props.location}</h6>
-                                    </div>
-                                </div>
-                            </Link>
-                            </>
-                        ))}
-                    </ul>
-                    {/* {isOpen &&
-                    <Popup
-                        content={<>
-                            <div className='wisata-popup-name'>{filteredCards[popupIndex].name}</div>
-                            <img className='wisata-popup-image' src={filteredCards[popupIndex].link.split('|')[1]} />
-                            <div className='wisata-popup-desc'>{filteredCards[popupIndex].desc}</div>
-                            <div className='wisata-popup-price'>{filteredCards[popupIndex].price}</div>
-                            <div className='wisata-popup-location'>{filteredCards[popupIndex].location}</div>
-                            <div className='gmaps-link'>
-                            <Button className='btns' buttonStyle='btn--primary' buttonSizae='btn--medium'>
-                            <a  href={filteredCards[popupIndex].link.split('|')[0]} target='_blank' className='btns'>Buka Google Maps</a></Button>
-                            </div>
-                        </>}
-                        handleClose={togglePopup}
-                        />} */}
-                </div>
+                ))}
 
+                {isOpen && selectedCard && (
+                    <div className='popup' onClick={() => togglePopup(null)}>
+                        <div className='popup-inner' onClick={(e) => e.stopPropagation()}>
+                            <img className='popup-image' src={selectedCard.link} alt={selectedCard.name} />
+                            <div className='popup-description'>
+                                <h2>{selectedCard.name}</h2>
+                                <p>{selectedCard.description}</p>
+                            </div>
+                        </div>
+                        <div className='gmaps-container'>
+                            <iframe
+                                src={selectedCard.mapsLink}
+                                width="100%"
+                                height="300"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Google Maps"
+                            ></iframe>
+                        </div>
+                        <button onClick={() => togglePopup(null)}>Close</button>
+                    </div>
+                )}
             </div>
         </div>
-      );
-    }
-
-
+    );
+}
 
 export default WisataAlam;

@@ -1,13 +1,48 @@
 @font-face {
-    font-family: 'Hello Pirates';
-    src: url('HelloPirates.eot');
-    src: url('HelloPirates.eot?#iefix') format('embedded-opentype'),
-        url('HelloPirates.woff2') format('woff2'),
-        url('HelloPirates.woff') format('woff'),
-        url('HelloPirates.ttf') format('truetype'),
-        url('HelloPirates.svg#HelloPirates') format('svg');
+    font-family: 'Poppins';
+    src: url('./components/fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('./components/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./components/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* Semi-bold biasanya diatur dengan weight 600 */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Jika Anda juga ingin menggunakan Italic: */
+@font-face {
+    font-family: 'Poppins';
+    src: url('./components/fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./components/fonts/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./components/fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 2000;
+    font-style: normal;
+    font-display: swap;
+}
