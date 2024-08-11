@@ -1,7 +1,7 @@
 .hero-container video {
   object-fit: cover;
   width: 100% !important;
-  height: 100%;
+  height: 150%;
   position: absolute;
   z-index: -1;
 }
@@ -15,16 +15,28 @@
   text-align: center;
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  object-fit: contain;
-  overflow:hidden;
-  background: url('../images/tanjung-gaang.jpeg');
+  overflow: hidden;
+  background: url('../images/pantai-selayar.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* Warna overlay, bisa disesuaikan */
+  z-index: -1;
 }
 
 #ylw-btn {
-  background: #f6bb35;
+  background: #F6EACB;
 }
 
 .hero-container > h1 {

@@ -21,19 +21,18 @@ function Navbar() {
   };
 
   const changeBackground = () => {
-    console.log(window.scrollY)
-    if (window.scrollY >= 66) {
-      setNavbar(true)
+    if (window.scrollY >= 66) { 
+      setNavbar(true); // Tambahkan kelas 'nav-scroll' saat discroll
     } else {
-      setNavbar(false)
+      setNavbar(false); // Hilangkan kelas 'nav-scroll' saat tidak discroll
     }
-  }
+  };   
 
   useEffect(() => {
     showButton();
-    changeBackground()
+    changeBackground();
     // adding the event when scroll change background
-    window.addEventListener("scroll", changeBackground)
+    window.addEventListener("scroll", changeBackground);
   }, []);
 
   window.addEventListener('resize', showButton);
@@ -45,7 +44,6 @@ function Navbar() {
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img className='navbar-logo-img' alt='baweanesia logo' src={LogoNavbar}></img>
             Baweanesia
-            
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -74,7 +72,6 @@ function Navbar() {
                 Produk
               </Link>
             </li>
-
             <li className='nav-item'>
               <Link
                 to='/blog'
@@ -84,7 +81,6 @@ function Navbar() {
                 Blog
               </Link>
             </li>
-
             <li>
               <Link
                 to='/sign-up'
@@ -95,7 +91,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--primary'><a  href='https://intense-peak-53882.herokuapp.com/admin/auth/login' className='btns'>Masuk</a></Button>}
+          {button && <Button buttonStyle='btn--primary'><a href='https://intense-peak-53882.herokuapp.com/admin/auth/login' className='btns'>Masuk</a></Button>}
         </div>
       </nav>
     </>
