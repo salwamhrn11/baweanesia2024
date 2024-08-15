@@ -5,6 +5,9 @@ import '../../App.css';
 import ImageBanner from '../ImageBanner.js';
 import Footer from '../Footer';
 import ProdukCards from '../ProdukCards';
+import ToggleSection from '../ToggleSection.js';
+import ToggleSection2 from '../ToggleSection2.js';
+
 
 function Produk() {
   useEffect(() => {
@@ -13,7 +16,11 @@ function Produk() {
   return (
     <>
     <ImageBanner />
-    <ProdukCards />
+    {/* <ProdukCards /> */}
+    <br></br>
+    <h1 className="centered-text">UMKM</h1>
+    <ToggleSection/>  
+    <ToggleSection2/>  
     <Footer />
     </>
   );
