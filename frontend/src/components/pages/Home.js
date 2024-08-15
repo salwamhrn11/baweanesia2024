@@ -25,7 +25,7 @@ function Home() {
     <TravelReason />
     {/* <TravelWays /> */}
     {/* <Homestay /> */}
-    <FrequentlyAskedQuestions />
+    {/* <FrequentlyAskedQuestions /> */}
     <Footer />
     </>
   );
