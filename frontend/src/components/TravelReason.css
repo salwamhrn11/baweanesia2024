@@ -16,7 +16,7 @@
     padding-bottom: 16px;
     color: #fff;
     text-align: initial;
-    font-size: 56px;
+    font-size: 40px;
 }
 
 span.title-extend{
@@ -25,7 +25,7 @@ span.title-extend{
 
 .content-container{
     display: flex;
-    background-color: #779AAD;
+    background-color: #4F709C;
     /* background-color: #395F7C; */
     border-radius: 12px;
     padding: 64px;
@@ -61,7 +61,7 @@ span.title-extend{
 .text-content h2{
     color: #fff;
     padding:10px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 
