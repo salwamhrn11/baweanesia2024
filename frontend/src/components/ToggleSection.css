@@ -1,0 +1,45 @@
+.content-section {
+    margin-top: 20px;
+  }
+  
+  /* .card {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  } */
+  
+  button {
+    padding: 10px 20px;
+    background-color: #26648E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #007bff;
+  }
+  
+  .App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-section {
+    padding: 50px 20px;
+  }
+  
+  .centered-text {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
