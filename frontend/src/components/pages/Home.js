@@ -11,8 +11,7 @@ import Footer from '../Footer';
 import FrequentlyAskedQuestions from '../FAQS';
 import StoryMap from '../StoryMap';
 import AboutBawean from '../AboutBawean';
-
-
+import ImageSlider from '../PageFoto';
 
 function Home() {
   useEffect(() => {
@@ -23,6 +22,7 @@ function Home() {
     <VideoBanner />
     <Demografi />
     <AboutBawean/>
+    <ImageSlider/>
     {/* <StoryMap /> */}
     {/* <TravelReason /> */}
     {/* <TravelWays /> */}

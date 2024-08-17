@@ -15,7 +15,7 @@ function WisataAlam() {
             location: "Bawean",
             label: "Pantai",
             link: PantaiTanjungGaang,
-            description: "Pantai Tanjung Gaang adalah pantai yang terkenal dengan keindahan batu karangnya. Sebuah objek wisata yang memiliki bukit batu karang yang unik dan indah. Tanjung Gaang menonjol di tengah laut, sehingga kita dapat melihat deretan pulau lain di sekitarnya. Selain itu, pengunjung dapat melihat air laut yang jernih serta menikmati keindahan batu-batu karang dengan menyewa perahu nelayan.",
+            description: "Sebuah objek wisata yang memiliki bukit batu karang yang unik dan indah. Tanjung Gaang menonjol di tengah laut, sehingga kita dapat melihat deretan pulau lain di sekitarnya. Selain itu, pengunjung dapat melihat air laut yang jernih serta menikmati keindahan batu-batu karang dengan menyewa perahu nelayan.",
             mapsLink: "https://www.google.com/maps?q=Pantai+Tanjung+Gaang,Bawean&output=embed"
         },
         {
@@ -24,7 +24,7 @@ function WisataAlam() {
             location: "Bawean",
             label: "Air Terjun",
             link: AirTerjunLaccar,
-            description: "Air Terjun Laccar memiliki tinggi 25 meter yang terletak di Desa Kepuh Teluk Dalam, Sangkapura. Dengan ketinggian tersebut dan latar belakang tebing yang artistik, air terjun ini menjadi daya tarik para pengunjung. Pengunjung dapat berenang dan berendam pada air terjun ini.",
+            description: "Air Terjun Laccar terletak di Desa Kepuh Teluk Dalam, Sangkapura, Bawean, dengan tinggi 25 meter dan tebing yang artistik. Daya tariknya menarik banyak pengunjung yang ingin berenang, berendam, atau menikmati keindahan alam, sambil mendengarkan suara air yang menenangkan dan merasakan kesegaran udaranya.",
             mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6306.089322131591!2d112.69079793724455!3d-5.806371324562587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf56dd35139eb1%3A0x96930a67c87c4b4e!2sLaccar%20Waterfall!5e0!3m2!1sen!2sid!4v1723357256067!5m2!1sen!2sid"
         },
         {
@@ -33,9 +33,72 @@ function WisataAlam() {
             location: "Bawean",
             label: "Pulau",
             link: PulauNoko,
-            description: "Sebuah pantai kecil dengan pasir putih bersih dan gundukan pasir yang memanjang di tengah laut yang begitu jernih. Wisatawan dapat melakukan snorkeling, menaiki banana boat, dan berenang sepuasnya sembari menikmati keindahan Gili Noko.",
+            description: "Gili Noko adalah pantai kecil yang indah dengan pasir putih bersih dan gundukan pasir di tengah laut jernih. Wisatawan dapat menikmati aktivitas seperti snorkeling, menaiki banana boat, atau berenang sepuasnya. Keindahan alamnya menjadikan Gili Noko destinasi favorit untuk bersantai sambil menikmati pemandangan laut yang menakjubkan.",
             mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
         },
+        {
+            id: 4,
+            name: "Pantai Mayangkara",
+            location: "Bawean",
+            label: "Pulau",
+            link: PulauNoko,
+            description: "Pantai Mayangkara di Pulau Bawean menawarkan pasir putih bersih dan air laut yang jernih, dikelilingi perbukitan hijau yang menawan. Pengunjung bisa bersantai, berenang, atau berjalan di tepi pantai sambil menikmati keindahan matahari terbit dan terbenam yang spektakuler. Tempat ini ideal untuk menikmati suasana alam yang tenang dan menyegarkan.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
+        },
+        {
+            id: 5,
+            name: "Pantai Labuhan",
+            location: "Bawean",
+            label: "Pulau",
+            link: PulauNoko,
+            description: "Pantai Labuhan di Pulau Bawean memiliki pasir putih halus dan air laut biru jernih, dikelilingi pohon kelapa dan bukit hijau. Pengunjung dapat berenang, bersantai, atau menjelajahi pesisir sambil menikmati pemandangan matahari terbenam yang memukau, menjadikannya tempat ideal untuk relaksasi dan menikmati keindahan alam yang menenangkan.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
+        },
+        {
+            id: 6,
+            name: "Pantai Selayar",
+            location: "Bawean",
+            label: "Pulau",
+            link: PulauNoko,
+            description: "Pantai Selayar di Pulau Bawean adalah destinasi indah dengan pasir putih lembut dan air laut biru jernih. Dikelilingi pemandangan bukit hijau dan hutan tropis, pantai ini menawarkan suasana tenang. Pengunjung dapat berenang, bersantai di bawah pohon kelapa, atau menikmati pemandangan matahari terbit dan terbenam yang memukau serta suasana damai.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
+        },
+        {
+            id: 7,
+            name: "Pulau Cina",
+            location: "Bawean",
+            label: "Pulau",
+            link: PulauNoko,
+            description: "Pulau Cina di Pulau Bawean menawarkan pesona alam menakjubkan dengan pantai berpasir putih dan air laut biru jernih. Dikelilingi terumbu karang, pulau ini ideal untuk snorkeling dan menyelam. Suasana tenang dan pemandangan alami memukau membuatnya tempat sempurna untuk bersantai serta menikmati matahari terbit dan terbenam yang spektakuler.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
+        },
+        {
+            id: 8,
+            name: "Danau Kastoba",
+            location: "Bawean",
+            label: "Pulau",
+            link: PulauNoko,
+            description: "Danau Kastoba di Pulau Bawean adalah danau yang indah dengan air yang tenang dan dikelilingi pemandangan pegunungan hijau. Dengan suasana yang damai, danau ini cocok untuk bersantai, memancing, atau menikmati keindahan alam. Airnya yang jernih dan latar belakang alam yang mempesona menjadikannya tempat ideal untuk bersantai sambil menikmati keindahan alam Pulau Bawean.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
+        },
+        {
+            id: 9,
+            name: "Hutan Mangrove",
+            location: "Bawean",
+            label: "Pulau",
+            link: PulauNoko,
+            description: "Hutan Mangrove di Pulau Bawean adalah ekosistem unik dengan pepohonan mangrove rimbun dan akar menjulang. Terletak di tepi pantai, hutan ini menawarkan pemandangan menyejukkan dan merupakan habitat bagi berbagai spesies burung dan ikan. Pengunjung dapat menjelajahi jalur setapak, naik kano, dan menikmati suasana damai sambil belajar tentang ekosistem mangrove yang vital.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
+        },
+        {
+            id: 10,
+            name: "Pantai Mombhul",
+            location: "Bawean",
+            label: "Pulau",
+            link: PulauNoko,
+            description: "Pantai Mombhul di Pulau Bawean menawarkan keindahan alam dengan pasir putih lembut dan air laut biru jernih. Selain keindahan pantainya, pengunjung juga dapat menemukan spesies rusa Bawean yang langka di sekitar area. Pantai ini ideal untuk berenang, bersantai, atau menjelajahi lingkungan sambil menikmati pemandangan dan kehidupan liar yang khas.",
+            mapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1606927885714!2d112.76759668157516!3d-5.8037711191551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51c55f7b8899%3A0xcec2747abae3a31b!2sPantai%20Noko%20Selayar!5e0!3m2!1sen!2sid!4v1723357423241!5m2!1sen!2sid"
+        }
     ];
 
     const [isOpen, setIsOpen] = useState(false);
