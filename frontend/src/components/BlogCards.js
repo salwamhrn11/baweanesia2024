@@ -1,81 +1,34 @@
-import {axios} from "./axios";
-import React, {useState, useEffect} from "react";
-import {Link} from 'react-router-dom';
-import '../App.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './BlogCards.css';
-import {Button} from './Button';
-import SearchBar from "./SearchBar";
 
-function BlogCards(){
-    const[blogCards, setBlogCards] = useState([]);
+const articles = [
+  {
+    id: 1,
+    title: 'Menyapa Mayangkara: Wisata Pantai di Desa Kepuhteluk',
+    image: 'https://via.placeholder.com/300x200',
+    content: `
+      <p><strong>Kec. Tambak, Kab. Gresik (14/7/2024)</strong> – Pantai merupakan salah satu kekayaan di Indonesia yang memiliki pesona alam yang luar biasa...</p>
+      <!-- More content -->
+    `
+  },
+  {
+    id: 2,
+    title: 'Artikel 2',
+    image: 'https://via.placeholder.com/300x200',
+    content: 'Ini adalah konten artikel kedua.'
+  }
+];
 
-    useEffect(() =>{
-        axios
-        .get("/blog")
-        .then(response => {
-            console.log("Response:", response)
-            setBlogCards(response.data)
-        })
-        .catch((err) => {
-            console.log("Error:", err)
-        })
-    }, []);
+const HomePage = () => (
+  <div className="card-container">
+    {articles.map(article => (
+      <Link key={article.id} to={`/blog/${article.id}`} className="card">
+        <img src={article.image} alt={article.title} />
+        <div className="card-title">{article.title}</div>
+      </Link>
+    ))}
+  </div>
+);
 
-    const { search } = window.location;
-    const query = new URLSearchParams(search).get('s');
-    const [searchQuery, setSearchQuery] = useState(query || '');
-    const filterCards = (blogCards, query) => {
-        if (!query) {
-            return blogCards;
-        }
-    
-        return blogCards.filter((post) => {
-            const postName = post.title.toLowerCase();
-            return postName.includes(query)
-        });
-    };
-
-    const filteredCards = filterCards(blogCards, searchQuery.toLocaleLowerCase());
-
-    return(
-        <div className='blog-container'>
-            <h1 data-aos='fade-up'>Tulisan Kami!</h1>
-            <div className='blog-card-container' >
-                <div className='blog-card-wrapper'>
-                    <div className='searchbox' data-aos='fade-up'>
-                        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} placeholder="Cari Blog..."/>
-                    </div>
-                    <ul data-aos='fade-up' className='blog-card'>
-                        {filteredCards.map(post => (
-                            <div key={post.id}>
-                            <li data-aos='fade-up' className='blog-cards-item'>
-                                <div className='blog-card-link'>
-                                    <figure className='blog-card-pic-wrap' data-category={post.title}>
-                                        <img
-                                            className='blog-card-img'
-                                            alt={post.title}
-                                            src={post.img}
-                                        />
-                                    </figure>
-                                    <div className='blog-card-info'>
-                                        <h5 className='blog-card-title'>{post.title}</h5>
-                                        <h6 className='blog-card-author'>{post.author}</h6>
-                                        <h6 className='blog-card-published'>{post.published_at}</h6>
-                                        <h6 className='blog-card-desc'>{post.desc.slice(0,300)}...</h6>
-                                        <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--medium'>
-                                            <Link to={`/blog/${post.id}`}>Read more</Link>
-                                        </Button>
-                                    </div>
-                                </div>
-                            </li>
-                            </div>
-                        ))}
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export default BlogCards
+export default HomePage;
