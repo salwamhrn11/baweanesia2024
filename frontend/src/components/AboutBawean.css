@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  background-color: #0a264c;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    padding: 20px;
+    background: transparent;
+}
+
+.content-title {
+    margin-top: 10px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 25px;
+}
+
+.reason-title {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span.title-extend {
+    color: #4F709C;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    background-color: #0a264c;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 1200px; /* Constrain max width */
+    box-sizing: border-box; /* Include padding in width */
+    overflow: hidden; /* Hide overflow */
+    margin-bottom: 60px;
+}
+
+.img-column {
+    flex: 1;
+    padding-right: -10px; /* Space between image and text */
+}
+
+.img-column img {
+    margin-top: -15px;
+    width: 90%;
+    height: auto;
+    margin-left: 10px;
+    max-width: 100%; /* Ensure image scales properly */
+    display: block; /* Remove extra space below the image */
+}
+
+.text-column {
+    flex: 1;
+    margin-left: -30px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.text-content {
+    text-align: justify;
+}
+
+.text-content h2 {
+    color: #F0F0F0;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin-right: 45px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .content-container {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center;
+    }
+
+    .img-column, .text-column {
+        width: 100%; /* Full width on smaller screens */
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .content-container {
+        padding: 15px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+}

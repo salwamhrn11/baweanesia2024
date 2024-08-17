@@ -10,6 +10,7 @@ import TravelReason from '../TravelReason';
 import Footer from '../Footer';
 import FrequentlyAskedQuestions from '../FAQS';
 import StoryMap from '../StoryMap';
+import AboutBawean from '../AboutBawean';
 
 
 
@@ -21,8 +22,9 @@ function Home() {
     <>
     <VideoBanner />
     <Demografi />
+    <AboutBawean/>
     {/* <StoryMap /> */}
-    <TravelReason />
+    {/* <TravelReason /> */}
     {/* <TravelWays /> */}
     {/* <Homestay /> */}
     {/* <FrequentlyAskedQuestions /> */}
