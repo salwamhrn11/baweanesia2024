@@ -34,12 +34,13 @@ function VideoBanner() {
               <video src={`Waves splashing onto a rocky shore in the distance.mp4`} autoPlay loop muted />
                 <h1>Bawean Island</h1>
                 <p>The Hidden Paradise of East Java</p>
-              <div className='hero-btns'>
+              <div className='hero-btns' style={{ color: 'white' }}>
               <Button
                 className='btns'
                 btnColor='yellow-btn'
                 buttonStyle='btn--primary'
                 buttonSize='btn--large'
+                color="white"
               >
                 <a  href='https://storymaps.arcgis.com/stories/991f9363409143de9fc98f873ed3e23b' rel="noreferrer" target='_blank' className='btns'>
                 STORY MAP

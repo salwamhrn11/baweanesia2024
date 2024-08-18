@@ -5,9 +5,18 @@ import Image1 from '../images/image1.JPG';
 import Image2 from '../images/image2.JPG';
 import Image3 from '../images/image3.JPG';
 import Image4 from '../images/image4.JPG';
+import Image5 from '../images/image5.JPG';
+import Image6 from '../images/image6.JPG';
+import Image7 from '../images/image7.jpeg';
+import Image8 from '../images/image8.JPG';
+import Image9 from '../images/image9.JPG';
+import Image10 from '../images/image10.jpeg';
+import Image11 from '../images/image11.jpeg';
+
+
 
 const ImageSlider = () => {
-  const images = [Image1, Image2, Image3, Image4];
+  const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

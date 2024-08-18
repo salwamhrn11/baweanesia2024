@@ -2,7 +2,14 @@ import React, { useState } from 'react';
 import '../App.css';
 import './ToggleSection.css';
 
-import Kedai from '../images/Kedai.jpeg';
+import Kedai1 from '../images/kedai1.jpeg';
+import Kedai2 from '../images/kedai2.jpeg';
+import Kedai3 from '../images/kedai3.jpeg';
+import Kedai4 from '../images/kedai4.jpeg';
+import Kedai5 from '../images/kedai5.jpeg';
+import Kedai6 from '../images/kedai6.jpeg';
+import Kedai7 from '../images/kedai7.jpeg';
+
 
 const ToggleSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -17,7 +24,7 @@ const ToggleSection = () => {
         name: "Warung Mbak Erin",
         location: "Dusun Carabaka",
         label: "UMKM",
-        link: Kedai,
+        link: Kedai1,
         description: "082138345696",
         mapsLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3969.4879306315784!2d112.73493400000001!3d-5.786534000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwNDcnMTEuNSJTIDExMsKwNDQnMDUuOCJF!5e0!3m2!1sen!2sid!4v1723848866535!5m2!1sen!2sid"
     },
@@ -26,8 +33,8 @@ const ToggleSection = () => {
         name: "Warung Hanum",
         location: "Dusun Carabaka",
         label: "UMKM",
-        link: Kedai,
-        description: "082138345696",
+        link: Kedai2,
+        description: "082245079857",
         mapsLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3969.486343895421!2d112.73504799999999!3d-5.786759999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwNDcnMTIuMyJTIDExMsKwNDQnMDYuMiJF!5e0!3m2!1sen!2sid!4v1723849235249!5m2!1sen!2sid"
     },
     {
@@ -35,8 +42,8 @@ const ToggleSection = () => {
         name: "Warung Noa",
         location: "Dusun Carabaka",
         label: "UMKM",
-        link: Kedai,
-        description: "082138345696",
+        link: Kedai3,
+        description: "081330185202",
         mapsLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3969.4857751829145!2d112.735118!3d-5.786841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwNDcnMTIuNiJTIDExMsKwNDQnMDYuNCJF!5e0!3m2!1sen!2sid!4v1723849159650!5m2!1sen!2sid"
     },
     {
@@ -44,8 +51,8 @@ const ToggleSection = () => {
         name: "Toko Kelontong Pak Ending",
         location: "Dusun Carabaka",
         label: "UMKM",
-        link: Kedai,
-        description: "082138345696",
+        link: Kedai4,
+        description: "081358041451",
         mapsLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3969.4736548060882!2d112.72698299999999!3d-5.788567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwNDcnMTguOCJTIDExMsKwNDMnMzcuMSJF!5e0!3m2!1sen!2sid!4v1723849111289!5m2!1sen!2sid"
     },
     {
@@ -53,7 +60,7 @@ const ToggleSection = () => {
       name: "Warung Bu Natijah",
       location: "Dusun Carabaka",
       label: "UMKM",
-      link: Kedai,
+      link: Kedai5,
       description: "082138345696",
       mapsLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3969.4737812248973!2d112.727702!3d-5.788549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwNDcnMTguOCJTIDExMsKwNDMnMzkuNyJF!5e0!3m2!1sen!2sid!4v1723848588292!5m2!1sen!2sid"
     },
@@ -62,17 +69,17 @@ const ToggleSection = () => {
       name: "Toko Kelontong Vian",
       location: "Dusun Carabaka",
       label: "UMKM",
-      link: Kedai,
+      link: Kedai6,
       description: "082138345696",
       mapsLink: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1126.6742634469751!2d112.73011576722676!3d-5.787740449676112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ddf51005547578b%3A0x68b92c7b937862e!2sToko%20Kelontong%20Carabaka!5e0!3m2!1sen!2sid!4v1723848225923!5m2!1sen!2sid"
     },
     {
       id: 7,
-      name: "Warung Bakso Benggol",
+      name: "Warung Pratama",
       location: "Dusun Carabaka",
       label: "UMKM",
-      link: Kedai,
-      description: "082138345696",
+      link: Kedai7,
+      description: "082245079857",
       mapsLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3969.485157313422!2d112.73521!3d-5.786928999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwNDcnMTIuOSJTIDExMsKwNDQnMDYuOCJF!5e0!3m2!1sen!2sid!4v1723848813625!5m2!1sen!2sid"
     },
 
@@ -141,7 +148,7 @@ const togglePopup = (card) => {
                             {/* <p className='popup-text'>{selectedCard.description}</p> */}
                         </div>
                     </div>
-                    <p>Nomor HP: 082138345696</p>
+                    <p>Nomor HP: {selectedCard.description}</p>
                     <div className='gmaps-container'>
                         <iframe
                             src={selectedCard.mapsLink}

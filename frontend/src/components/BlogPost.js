@@ -4,6 +4,8 @@ import './BlogPost.css';
 import mayangkara from '../images/artikel-mayangkara.jpg';
 import bawean from '../images/artikel-bawean.jpg';
 import ngajar from'../images/artikel-ngajar.jpg';
+import pajimatan from '../images/pajimatan.jpeg'
+import kuliner from '../images/kuliner.jpeg'
 
 const articles = [
   {
@@ -20,12 +22,13 @@ const articles = [
       <p>Perjalanan menuju Pantai Mayangkara juga menawarkan pemandangan yang menarik. Sepanjang jalan, pengunjung dapat melihat hamparan sawah hijau yang luas serta sapi-sapi yang sedang merumput di padang rumput. Pemandangan ini menambah suasana pedesaan yang asri dan membuat perjalanan menjadi lebih menyenangkan. Keindahan alam pedesaan ini memberikan nuansa yang berbeda dan membuat pengalaman menuju pantai semakin berkesan.</p>
       <p>Selain itu, pengunjung juga dapat melihat pepohonan dan bukit-bukit yang mempesona. Terdapat Bukit Teletubies yang berada tepat di atas Pantai Mayangkara sehingga dapat dimanfaatkan menjadi jalur pendakian. Pengunjung juga dapat menikmati udara yang masih bersih dan sejuk, sehingga membuat wisatawan bisa menikmati keasrian Pantai Mayangkara. Dengan segala keindahannya, Pantai Mayangkara menjadi destinasi yang wajib dikunjungi bagi para pecinta pantai dan alam.</p>
       <p>Pulau Bawean, tempat Pantai Mayangkara berada, juga dikenal dengan keramahan penduduknya. Masyarakat lokal yang mayoritas berprofesi sebagai nelayan sangat terbuka dan ramah terhadap para wisatawan. Mereka sering kali dengan senang hati berbagi cerita tentang kehidupan sehari-hari, tradisi, dan budaya lokal yang unik. Pengalaman berinteraksi dengan penduduk setempat memberikan kesan yang mendalam dan memperkaya perjalanan wisatawan. Jadi, tunggu apa lagi? Ayo kunjungi Pantai Mayangkara dan rasakan sendiri pesonanya!</p>
-    `
+      <span class="source">Sumber: <a href="https://www.goodnewsfromindonesia.id/2024/07/14/menyapa-mayangkara-wisata-pantai-di-desa-kepuhteluk" target="_blank">https://www.goodnewsfromindonesia.id/2024/07/14/menyapa-mayangkara-wisata-pantai-di-desa-kepuhteluk</a></span>
+      `
   },
   {
     id:2,
     title: 'Menilik Tradisi Pajimatan: Budaya Keramat di Dusun Carabaka, Bawean',
-    image: 'https://via.placeholder.com/300x200',
+    image: pajimatan,
     content: `
     <p><strong>Kec. Tambak, Kab. Gresik (4/7/2024)</strong> – Tradisi Pajimatan merupakan budaya turun-temurun yang dijaga oleh masyarakat Dusun Carabaka, Desa Kepuh Legundi, Pulau Bawean. Tradisi ini telah berlangsung selama kurang lebih satu abad dan tetap dijaga hingga saat ini. Pelaksanaan Pajimatan dilakukan pada bulan Dzulhijah, tepatnya setelah Hari Raya Idul Adha dan sebelum bulan Dzulhijah berakhir, biasanya pada hari Senin atau Kamis. Dusun Carabaka, pada masa lampau, diyakini sebagai dusun keramat yang sangat kental dengan budayanya.</p>
     <p>Pajimatan adalah kegiatan yang dilakukan oleh masyarakat Dusun Carabaka, Desa Kepuh Legundi, untuk menghormati leluhur mereka. Pada pelaksanaan Pajimatan, terdapat peninggalan sejarah berupa artefak dan banyak kearifan lokal yang bisa diteladani dari tradisi ini. Tradisi Pajimatan mencakup beberapa kegiatan seperti pembacaan Surah Yasin, tahlil, Al-Fatihah, doa, pembagian air suci, dan makan bersama. Tradisi ini tidak hanya memperkuat ikatan sosial di antara masyarakat, tetapi juga sebagai momen untuk merefleksikan nilai-nilai spiritual dan historis yang diwariskan oleh para leluhur.</p>
@@ -35,12 +38,13 @@ const articles = [
     <p>Bapak Zainal, sebagai penjaga Dusun Carabaka, memiliki peran penting dalam mencari air suci ini. Pengambilan air suci dilaksanakan menjelang petang, tengah malam, atau dini hari. Setiap
 tahun, intensitas air toleh yang diambil bisa berbeda-beda. Masyarakat percaya bahwa jumlah air yang diambil memiliki pertanda tertentu. Proses pengambilan air suci ini terkadang menghadapi kendala, seperti gangguan oleh makhluk halus atau serangga. Air suci yang digunakan harus berasal dari air toleh untuk menghindari kejadian-kejadian yang tidak diinginkan, seperti wadah air yang tiba-tiba rusak. Ada perbedaan dalam pelaksanaan Tradisi Pajimatan dulu dan sekarang, seperti penggunaan pisang yang diganti dengan ketan. Perubahan ini menunjukkan adaptasi tradisi terhadap perubahan zaman, namun tetap mempertahankan esensi dan nilai-nilai yang terkandung di dalamnya.</p>
     <p>Secara keseluruhan, Tradisi Pajimatan bukan hanya sekadar ritual, tetapi juga cerminan dari kekayaan budaya, sejarah, dan spiritualitas masyarakat Dusun Carabaka. Tradisi ini memperlihatkan bagaimana masyarakat setempat menjaga hubungan harmonis dengan alam, leluhur, dan sesama manusia, serta bagaimana mereka menyalurkan nilai-nilai tersebut kepada generasi berikutnya.</p>
+    <span class="source">Sumber: <a href="https://www.goodnewsfromindonesia.id/2024/07/08/menilik-tradisi-pajimatan-budaya-keramat-di-dusun-carabaka-bawean" target="_blank">https://www.goodnewsfromindonesia.id/2024/07/08/menilik-tradisi-pajimatan-budaya-keramat-di-dusun-carabaka-bawean</a></span>
     `
   },
   {
     id:3,
     title: 'Kuliner Pulau Bawean: Masakan Khas dari Desa',
-    image: 'https://via.placeholder.com/300x200',
+    image: kuliner,
     content: `
    <p><strong>Kec. Tambak, Kab. Gresik (21/7/2024)</strong>- Pulau Bawean yang terletak di Kabupaten Gresik dan berada di utara pulau jawa merupakan surga tersembunyi milik laut jawa. Keindahan yang dimiliki oleh pulau ini sangatlah beragam, tetapi keindahan itu bukan satu-satunya keunggulan Pulau Bawean. Salah satu keunggulan yang menarik dari kehidupan masyarakat Pulau Bawean adalah makanan dan minuman tradisional desanya. Makanan desa tidak hanya lezat tetapi juga memiliki cita rasa khas yang diwariskan dari generasi ke generasi. Berikut merupakan makanan khas Pulau Bawean yang memiliki keunikan tersendiri:</p>
    <p><strong>1. Kobbhuk-Kobbhuk</strong></p>
@@ -57,6 +61,7 @@ pengolahan tradisional seperti pemanggangan, pengukusan dalam daun pisang, dan p
    <p><strong>6. Pempek </strong></p>
    <p>Pempek khas Bawean merupakan gabungan dari pempek biasa dan dibuat dari campuran ikan segar lokal, menghasilkan tekstur kenyal dan rasa ikan yang khas. Pempek ini biasa diisajikan dengan sambal khas Bawean yang terbuat dari gula merah, cabai, bawang putih, dan asam jawa. Hidangan ini biasanya disertai irisan timun dan taburan ebi, menciptakan sensasi rasa yang gurih. Makanan ini menjadi salah satu kuliner yang sering dijumpai di Pulau Bawean.</p>
    <p>Makanan dan minuman tradisional di Pulau Bawean adalah pewarisan kebudayaan turun-temurun berupa hidangan yang perlu dijaga. Setiap hidangan tidak hanya memberikan cita rasa yang unik, tetapi memiliki pengalaman yang berharga ketika mencobanya. Dengan mempertahankan dan melestarikan makanan desa ini, kita turut menjaga warisan budaya yang sangat berharga agar tetap lestari dan dikenal oleh generasi mendatang.</p>
+   <span class="source">Sumber: <a href="https://www.goodnewsfromindonesia.id/2024/07/30/kuliner-pulau-bawean-masakan-khas-dari-desa" target="_blank">https://www.goodnewsfromindonesia.id/2024/07/30/kuliner-pulau-bawean-masakan-khas-dari-desa</a></span>
    `
   },
   {
@@ -113,6 +118,8 @@ pengolahan tradisional seperti pemanggangan, pengukusan dalam daun pisang, dan p
     keharmonisan sosial. Oleh karena itu, diharapkan acara ini dapat menjadi tradisi yang terus
     dijaga dan dilestarikan, sehingga dapat menjadi inspirasi bagi daerah lain untuk menggelar
     kegiatan serupa yang dapat memperkuat ikatan sosial dan keagamaan di tengah masyarakat.</p>
+    <span class="source">Sumber: <a href="https://www.goodnewsfromindonesia.id/2024/07/30/bawean-bersholawat-lantunan-pujian-menggema-di-bumi" target="_blank">https://www.goodnewsfromindonesia.id/2024/07/30/bawean-bersholawat-lantunan-pujian-menggema-di-bumi</a></span>
+
 `
   },
   {

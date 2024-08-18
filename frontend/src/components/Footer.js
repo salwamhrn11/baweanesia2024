@@ -4,7 +4,7 @@ import { Button } from './Button';
 // import { Link } from 'react-router-dom';
 import {axios} from './axios';
 import Axios from 'axios'
-import FooterHeader from '../images/Header 1.png'
+import FooterLogo from '../images/Footer-Logo.png'
 import FooterIllustration from '../images/Picture2.png'
 
 function Footer() {
@@ -114,7 +114,7 @@ function Footer() {
               </div>
                 <section class='social-media'>
                   <div class='social-media-wrap'>
-                    <img class='website-rights' src={FooterHeader} alt='header'></img>
+                    <img class='website-rights' src={FooterLogo} alt='header'></img>
                     {/* <div class='social-icons'>
                       <Link
                         class='social-icon-link facebook'

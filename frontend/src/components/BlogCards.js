@@ -4,6 +4,8 @@ import './BlogCards.css';
 import mayangkara from '../images/artikel-mayangkara.jpg'
 import bawean from '../images/artikel-bawean.jpg'
 import ngajar from '../images/artikel-ngajar.jpg'
+import pajimatan from '../images/pajimatan.jpeg'
+import kuliner from '../images/kuliner.jpeg'
 
 const articles = [
   {
@@ -18,7 +20,7 @@ const articles = [
   {
     id: 2,
     title: 'Menilik Tradisi Pajimatan: Budaya Keramat di Dusun Carabaka, Bawean',
-    image: 'https://via.placeholder.com/300x200',
+    image: pajimatan,
     content: `
     <p><strong>Kec. Tambak, Kab. Gresik (4/7/2024)</strong> – Tradisi Pajimatan merupakan budaya turun-temurun...</p>
 
@@ -27,7 +29,7 @@ const articles = [
   {
     id: 3,
     title: 'Kuliner Pulau Bawean: Masakan Khas dari Desa',
-    image: 'https://via.placeholder.com/300x200',
+    image: kuliner,
     content: `
     <p><strong>Kec. Tambak, Kab. Gresik (21/7/2024)</strong> – Pulau Bawean yang terletak di Kabupaten Gresik...</p>
 
