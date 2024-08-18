@@ -12,11 +12,15 @@ import Image8 from '../images/image8.JPG';
 import Image9 from '../images/image9.JPG';
 import Image10 from '../images/image10.jpeg';
 import Image11 from '../images/image11.jpeg';
-
+import Image12 from '../images/image12.jpg';
+import Image13 from '../images/image13.jpg';
+import Image14 from '../images/image14.jpg';
+import Image15 from '../images/image15.jpg';
+import Image16 from '../images/image16.jpg';
 
 
 const ImageSlider = () => {
-  const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11];
+  const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14, Image15, Image16];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

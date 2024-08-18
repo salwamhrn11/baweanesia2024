@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import '../App.css';
 import './ToggleSection.css';
-
 import Kedai from '../images/Kedai.jpeg';
 
 const ToggleSection = () => {
@@ -14,40 +12,69 @@ const ToggleSection = () => {
   const produkData = [
     {
         id: 1,
-        name: "-",
-        location: "-",
+        name: "Warung Bu Mona",
+        location: "Dusun Pacinan",
+        notelp: "0812-93284920",
         label: "UMKM",
         link: Kedai,
-        description: "-",
+        description: "Menjual roti dan kue",
         mapsLink: ""
     },
     {
       id: 2,
-      name: "-",
-      location: "-",
+      name: "Warung Bu Sumartina",
+      location: "Dusun Sungai Topo",
       label: "UMKM",
       link: Kedai,
-      description: "-",
+      description: "Menjual Kerupuk",
       mapsLink: ""
     },
     {
       id: 3,
-      name: "-",
-      location: "-",
+      name: "Warung Bu Imamiyah",
+      location: "Dusun Pasir Panjang",
       label: "UMKM",
       link: Kedai,
-      description: "-",
+      description: "Warung Kelontong dan Kerupuk",
       mapsLink: ""
     },
     {
       id: 4,
-      name: "-",
-      location: "-",
+      name: "Warung Bu Oma",
+      location: "Dusun Pacinan",
       label: "UMKM",
       link: Kedai,
-      description: "-",
+      description: "Menjual Kerupuk",
       mapsLink: ""
     },
+    {
+      id: 5,
+      name: "Warung Bu Abdul",
+      location: "Dusun Langkap",
+      label: "UMKM",
+      link: Kedai,
+      description: "Menjual Kerupuk",
+      mapsLink: ""
+    },
+    {
+      id: 6,
+      name: "Warung Bu Aulia",
+      location: "Dusun Sungai Topo",
+      label: "UMKM",
+      link: Kedai,
+      description: "Menjual Kerupuk",
+      mapsLink: ""
+    },
+    {
+      id: 7,
+      name: "Warung Bu Iril",
+      location: "Dusun Pesisir",
+      label: "UMKM",
+      link: Kedai,
+      description: "Toko Kelontong",
+      mapsLink: ""
+    },
+
 ];
 
 const [isOpen, setIsOpen] = useState(false);
@@ -69,6 +96,18 @@ const togglePopup = (card) => {
       </div>
       {isVisible && (
         <div className="content-section">
+
+          {/* <div className="card-section">
+              <div className="cards-container">
+                {cards.map(card => (
+                  <div className="card" key={card.id}>
+                    <img src={card.image} alt={card.title} />
+                    <h2>{card.title}</h2>
+                    <p>{card.description}</p>
+                  </div>
+                ))}
+              </div>
+          </div> */}
 
         <div className='wisata-container'>
         <div className='wisata-card-container'>
@@ -101,7 +140,8 @@ const togglePopup = (card) => {
                             {/* <p className='popup-text'>{selectedCard.description}</p> */}
                         </div>
                     </div>
-                    <p>Nomor HP: 082138345696</p>
+                    <p><p>{selectedCard.description}</p></p>
+                    <p>Nomor HP: {selectedCard.notelp}</p>
                     <div className='gmaps-container'>
                         <iframe
                             src={selectedCard.mapsLink}
