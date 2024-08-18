@@ -20,7 +20,7 @@ function WisataAlam() {
         {
             id: 1,
             name: "Pantai Tanjung Gaang",
-            location: "Bawean",
+            location: "Kumalasa, Sangkapura",
             label: "Pantai",
             link: PantaiTanjungGaang,
             description: "Sebuah objek wisata yang memiliki bukit batu karang yang unik dan indah. Tanjung Gaang menonjol di tengah laut, sehingga kita dapat melihat deretan pulau lain di sekitarnya. Selain itu, pengunjung dapat melihat air laut yang jernih serta menikmati keindahan batu-batu karang dengan menyewa perahu nelayan.",
@@ -29,7 +29,7 @@ function WisataAlam() {
         {
             id: 2,
             name: "Air Terjun Laccar",
-            location: "Bawean",
+            location: "Kebontelukdalam, Sangkapura",
             label: "Air Terjun",
             link: AirTerjunLaccar,
             description: "Air Terjun Laccar terletak di Desa Kepuh Teluk Dalam, Sangkapura, Bawean, dengan tinggi 25 meter dan tebing yang artistik. Daya tariknya menarik banyak pengunjung yang ingin berenang, berendam, atau menikmati keindahan alam, sambil mendengarkan suara air yang menenangkan dan merasakan kesegaran udaranya.",
@@ -38,7 +38,7 @@ function WisataAlam() {
         {
             id: 3,
             name: "Pulau Noko",
-            location: "Bawean",
+            location: "Sidogedungbatu, Sangkapura",
             label: "Pulau",
             link: PulauNoko,
             description: "Gili Noko adalah pantai kecil yang indah dengan pasir putih bersih dan gundukan pasir di tengah laut jernih. Wisatawan dapat menikmati aktivitas seperti snorkeling, menaiki banana boat, atau berenang sepuasnya. Keindahan alamnya menjadikan Gili Noko destinasi favorit untuk bersantai sambil menikmati pemandangan laut yang menakjubkan.",
@@ -47,7 +47,7 @@ function WisataAlam() {
         {
             id: 4,
             name: "Pantai Mayangkara",
-            location: "Bawean",
+            location: "Diponggo, Tambak",
             label: "Pantai",
             link: PantaiMayangkara,
             description: "Pantai Mayangkara di Pulau Bawean menawarkan pasir putih bersih dan air laut yang jernih, dikelilingi perbukitan hijau yang menawan. Pengunjung bisa bersantai, berenang, atau berjalan di tepi pantai sambil menikmati keindahan matahari terbit dan terbenam yang spektakuler. Tempat ini ideal untuk menikmati suasana alam yang tenang dan menyegarkan.",
@@ -56,7 +56,7 @@ function WisataAlam() {
         {
             id: 5,
             name: "Pantai Labuhan",
-            location: "Bawean",
+            location: "Tanjungori, Tambak",
             label: "Pantai",
             link: PantaiLabuhan,
             description: "Pantai Labuhan di Pulau Bawean memiliki pasir putih halus dan air laut biru jernih, dikelilingi pohon kelapa dan bukit hijau. Pengunjung dapat berenang, bersantai, atau menjelajahi pesisir sambil menikmati pemandangan matahari terbenam yang memukau, menjadikannya tempat ideal untuk relaksasi dan menikmati keindahan alam yang menenangkan.",
@@ -65,7 +65,7 @@ function WisataAlam() {
         {
             id: 6,
             name: "Pantai Selayar",
-            location: "Bawean",
+            location: "Sidogedungbatu, Sangkapura",
             label: "Pantai",
             link: PantaiSelayar,
             description: "Pantai Selayar di Pulau Bawean adalah destinasi indah dengan pasir putih lembut dan air laut biru jernih. Dikelilingi pemandangan bukit hijau dan hutan tropis, pantai ini menawarkan suasana tenang. Pengunjung dapat berenang, bersantai di bawah pohon kelapa, atau menikmati pemandangan matahari terbit dan terbenam yang memukau serta suasana damai.",
@@ -74,7 +74,7 @@ function WisataAlam() {
         {
             id: 7,
             name: "Pulau Cina",
-            location: "Bawean",
+            location: "Jatidawang, Sangkapura",
             label: "Pulau",
             link: PulauCina,
             description: "Pulau Cina di Pulau Bawean menawarkan pesona alam menakjubkan dengan pantai berpasir putih dan air laut biru jernih. Dikelilingi terumbu karang, pulau ini ideal untuk snorkeling dan menyelam. Suasana tenang dan pemandangan alami memukau membuatnya tempat sempurna untuk bersantai serta menikmati matahari terbit dan terbenam yang spektakuler.",
@@ -83,7 +83,7 @@ function WisataAlam() {
         {
             id: 8,
             name: "Danau Kastoba",
-            location: "Bawean",
+            location: "Paromaan, Sangkapura",
             label: "Danau",
             link: DanauKastoba,
             description: "Danau Kastoba di Pulau Bawean adalah danau yang indah dengan air yang tenang dan dikelilingi pemandangan pegunungan hijau. Dengan suasana yang damai, danau ini cocok untuk bersantai, memancing, atau menikmati keindahan alam. Airnya yang jernih dan latar belakang alam yang mempesona menjadikannya tempat ideal untuk bersantai sambil menikmati keindahan alam Pulau Bawean.",
@@ -92,7 +92,7 @@ function WisataAlam() {
         {
             id: 9,
             name: "Hutan Mangrove",
-            location: "Bawean",
+            location: "Daun, Sangkapura",
             label: "Hutan",
             link: HutanMangrove,
             description: "Hutan Mangrove di Pulau Bawean adalah ekosistem unik dengan pepohonan mangrove rimbun dan akar menjulang. Terletak di tepi pantai, hutan ini menawarkan pemandangan menyejukkan dan merupakan habitat bagi berbagai spesies burung dan ikan. Pengunjung dapat menjelajahi jalur setapak, naik kano, dan menikmati suasana damai sambil belajar tentang ekosistem mangrove yang vital.",
@@ -101,7 +101,7 @@ function WisataAlam() {
         {
             id: 10,
             name: "Pantai Mombhul",
-            location: "Bawean",
+            location: "Sidogedungbatu, Sangkapura",
             label: "Hutan",
             link: PantaiMombhul,
             description: "Pantai Mombhul di Pulau Bawean menawarkan keindahan alam dengan pasir putih lembut dan air laut biru jernih. Selain keindahan pantainya, pengunjung juga dapat menemukan spesies rusa Bawean yang langka di sekitar area. Pantai ini ideal untuk berenang, bersantai, atau menjelajahi lingkungan sambil menikmati pemandangan dan kehidupan liar yang khas.",
